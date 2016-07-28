@@ -431,6 +431,14 @@ module.exports = function(grunt) {
           src: ['build/temp/video.js']
         }
       }
+    },
+    shell: {
+      lint: {
+        command: 'vjsstandard',
+        options: {
+          preferLocal: true
+        }
+      }
     }
   });
 
